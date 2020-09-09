@@ -1,0 +1,28 @@
+.parent {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  /* Main Axis */
+  justify-content: space-around;
+  /* Cross Axis */
+  align-content: center;
+  font-size: 80px;
+}
+
+.child {
+  width: 400px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: gray;
+  color: white;
+}
+
+.child:nth-child(2) {
+  background: black;
+  /* 다른 것보다 더 줄어듬 */
+  flex-shrink: 2;
+  /* 여분의 공간을 가져가서 커짐 */
+  flex-grow: 1;
+}

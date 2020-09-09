@@ -1,0 +1,21 @@
+.parent {
+  display: flex;
+  /* Main Axis */
+  justify-content: space-around;
+  flex-wrap: wrap-reverse;
+  flex-direction: row-reverse;
+  /* Cross Axis */
+  align-content: center;
+  height: 100vh;
+  font-size: 80px;
+}
+
+.child {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: gray;
+  color: white;
+}
