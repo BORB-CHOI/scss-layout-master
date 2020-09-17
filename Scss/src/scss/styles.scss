@@ -1,0 +1,59 @@
+@import "_potato.scss";
+@import "_mixins.scss";
+@import "_buttons";
+
+// Nesting
+
+// .box {
+//   margin-top: 20px;
+//   & {
+//     background-color: green;
+//   }
+//   h2 {
+//     color: blue;
+//     &:hover {
+//       color: red;
+//     }
+//   }
+//   button {
+//     color: red;
+//   }
+// }
+
+// Minxin
+
+// a {
+//   margin-bottom: 10px;
+//   &:nth-child(odd) {
+//     @include link(blue, "odd");
+//   }
+//   &:nth-child(even) {
+//     @include link(red, "even");
+//   }
+// }
+
+// Extends
+
+// a {
+//   @extend %button;
+//   text-decoration: none;
+// }
+// button {
+//   @extend %button;
+//   border: none;
+// }
+
+// Responsive
+
+h1 {
+  color: red;
+  @include responsive("iphone") {
+    color: yellow;
+  }
+  @include responsive("iphone-l") {
+    font-size: 60px;
+  }
+  @include responsive("tablet") {
+    color: green;
+  }
+}
