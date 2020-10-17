@@ -1,0 +1,31 @@
+@import "_variables.scss";
+@import "reset.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+aside {
+  width: 33%;
+  height: 100%;
+  padding: 70px;
+  background: $white_01;
+  color: $red_01;
+  h1 {
+    font-size: 5rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+  p {
+    padding-right: 100px;
+    overflow-wrap: break-word;
+    vertical-align: baseline;
+    text-align: justify;
+    text-indent: -0.5em;
+  }
+}
