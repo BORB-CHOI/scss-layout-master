@@ -1,4 +1,4 @@
-# scss_master_class
+# scss-master-class
 
 https://besthorrorscenes.com/
 
